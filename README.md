@@ -113,3 +113,63 @@ The character updates instantly when pressing keys 1–4, demonstrating a scalab
 ## 🚀 Result
 
 A clean and reusable first person zoom system that smoothly transitions using a Timeline and Lerp. The setup avoids harsh camera jumps and provides a polished feel suitable for aiming, inspecting objects, or enhancing player control.
+
+--- 
+
+# Project 3: Quixel Megascans Asset Import System
+
+## 🖼️ Preview
+
+![Project 3](Media/3.gif)
+
+## 🧱 Features
+
+**Quixel / Fab Integration**
+
+- Accessed Quixel assets through the Fab marketplace inside Unreal Engine
+- Used “Add to Project” workflow for direct asset importing
+- Logged into Epic account to sync asset library
+
+**Megascans Asset Workflow**
+
+- Imported high-quality scanned assets (rocks, food, props, etc.)
+- Automatically generated materials and textures on import
+- Assets organized inside `Content/Fab/Megascans` directory
+
+**Asset Validation System**
+
+- Identified usable assets via standard formats (FBX, GLB)
+- Avoided unsupported assets labeled:
+  - UEFN (Unreal Editor for Fortnite)
+  - Reference-only content
+- Ensured compatibility with standard Unreal Engine projects
+
+**Library & Content Management**
+
+- Added assets to Fab Library for reuse across projects
+- Accessed assets through Content Drawer → Fab tab
+- Maintained clean folder structure for scalability
+
+**Quality Control & Optimization**
+
+- Selected asset quality levels:
+  - Raw / High / Medium / Low
+- Balanced visual fidelity with performance impact
+- Noted storage and performance considerations for high-detail assets
+
+**Scene Integration**
+
+- Dragged static meshes directly into the level
+- Adjusted:
+  - Scale
+  - Rotation
+  - Positioning
+- Quickly prototyped realistic environments using Megascans
+
+---
+
+## 🚀 Result
+
+Successfully implemented a reliable workflow for importing and validating Quixel Megascans assets in Unreal Engine, while avoiding incompatible UEFN content and maintaining optimized project performance.
+
+:contentReference[oaicite:0]{index=0}
