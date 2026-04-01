@@ -170,4 +170,68 @@ A clean and reusable first person zoom system that smoothly transitions using a 
 
 ## 🚀 Result
 
-Successfully implemented a reliable workflow for importing and validating Quixel Megascans assets in Unreal Engine, while avoiding incompatible UEFN content and maintaining optimized project performance.
+Successfully implemented a reliable workflow for importing and validating Quixel Megascans assets in Unreal Engine, while avoiding incompatible UEFN content and maintaining optimized project performance. 
+
+--- 
+
+# Project 4: Dual Directional Light Lighting System
+
+## 🖼️ Preview
+
+![Project 4](Media/4.gif)
+
+## 🧱 Features
+
+**Multi-Light Directional Setup**
+
+- Added a second Directional Light to the scene for enhanced lighting control
+- Configured dual-light system to simulate multiple light sources (sun + fill)
+- Maintained compatibility with Unreal’s sky and atmosphere system
+
+**Forward Shading Configuration**
+
+- Resolved multiple directional light conflict warning
+- Set Forward Shading Priority to ensure proper light contribution
+- Prevented rendering issues with volumetric fog, water, and translucency
+
+**Atmosphere Light Index System**
+
+- Primary light set to Atmosphere Sun Light Index 0
+- Secondary light set to Atmosphere Sun Light Index 1
+- Enabled Unreal’s dual-sun support for advanced lighting setups
+
+**Dynamic Lighting Control**
+
+- Set both lights to Movable for real-time adjustments
+- Controlled primary light using:
+  - CTRL + L (viewport rotation)
+- Controlled secondary light using:
+  - CTRL + SHIFT + L
+- Used manual transform rotation when viewport controls failed
+
+**Lighting Composition & Positioning**
+
+- Positioned lights to shape highlights and shadow direction
+- Used secondary light as fill to enhance contrast
+- Balanced scene lighting for stylized or realistic results
+
+**Color Temperature System**
+
+- Enabled Use Temperature for both lights
+- Applied contrasting values:
+  - Cool light (12000K) for ambient sky tone
+  - Warm light (1700K) for sunset-style highlights
+- Created visual depth through warm vs cool contrast
+
+**Performance Awareness**
+
+- Noted performance cost of movable lights
+- Encouraged balancing quality with runtime efficiency
+
+---
+
+## 🚀 Result
+
+Implemented a flexible dual directional lighting system that provides full control over scene mood, contrast, and realism using independent light sources and temperature-based color blending.
+
+:contentReference[oaicite:0]{index=0}
