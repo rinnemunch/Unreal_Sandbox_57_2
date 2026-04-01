@@ -171,5 +171,3 @@ A clean and reusable first person zoom system that smoothly transitions using a 
 ## 🚀 Result
 
 Successfully implemented a reliable workflow for importing and validating Quixel Megascans assets in Unreal Engine, while avoiding incompatible UEFN content and maintaining optimized project performance.
-
-:contentReference[oaicite:0]{index=0}
