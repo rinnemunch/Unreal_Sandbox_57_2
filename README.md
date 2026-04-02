@@ -234,4 +234,58 @@ Successfully implemented a reliable workflow for importing and validating Quixel
 
 Implemented a flexible dual directional lighting system that provides full control over scene mood, contrast, and realism using independent light sources and temperature-based color blending.
 
-:contentReference[oaicite:0]{index=0}
+--- 
+
+# Project 5: Landscape Layer Blend Painting System
+
+## 🖼️ Preview
+
+![Project 5](Media/5.gif)
+
+## 🧱 Features
+
+**Landscape Creation & Setup**
+
+- Created new level using Basic template
+- Generated landscape using default settings
+- Sculpted terrain with height variation for painting visibility
+
+**Layered Landscape Material**
+
+- Created `M_LandscapeMaterials` for multi-texture blending
+- Added Landscape Layer Blend node for paintable layers
+- Defined multiple layers with clear naming conventions (no spaces)
+
+**Texture Blending System**
+
+- Connected Base Color textures to corresponding layer inputs
+- Duplicated Layer Blend node for Normal map support
+- Linked outputs to material Base Color and Normal inputs
+
+**Material Optimization**
+
+- Enabled Fully Rough to remove unwanted surface reflections
+- Ensured natural appearance for grass and rock materials
+
+**Layer Info & Paint System**
+
+- Generated layers using “Create Layers from Assigned Materials”
+- Created Weight-Blended Layer Info assets for smooth transitions
+- Stored Layer Info assets in organized `LandscapeMaterials` folder
+
+**Landscape Painting Workflow**
+
+- Painted secondary texture layers directly onto terrain
+- Blended textures dynamically for natural transitions
+- Observed real-time material updates during painting
+
+**Scalable Material System**
+
+- Built foundation for adding additional texture layers
+- Maintained reusable structure for complex environment design
+
+---
+
+## 🚀 Result
+
+Implemented a fully functional landscape painting system using layer blend materials, enabling smooth multi-texture terrain blending and scalable environment creation workflows.
