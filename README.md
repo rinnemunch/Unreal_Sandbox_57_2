@@ -1,3 +1,19 @@
+# 🧩 Unreal Engine Blueprint Showcase
+
+A curated collection of **Unreal Engine 5.7.4** mini-projects — each one a focused, standalone system built to demonstrate clean, production-level Blueprint design.
+Every project targets a core gameplay or visual mechanic that can scale into full systems for professional Unreal development.
+
+---
+
+## 🎞️ Project Gallery
+
+![Project Showcase](Media/all.gif)
+
+Explore the projects below 👇
+Each entry includes a **Blueprint workflow**, **GIF preview**, and **feature breakdown** — perfect for learning, prototyping, or integrating directly into your own UE projects.
+
+---
+
 # Project 1 - Enum Driven Material State System
 
 ## 🖼️ Preview
@@ -289,3 +305,73 @@ Implemented a flexible dual directional lighting system that provides full contr
 ## 🚀 Result
 
 Implemented a fully functional landscape painting system using layer blend materials, enabling smooth multi-texture terrain blending and scalable environment creation workflows.
+
+--- 
+
+# Project 6: Quixel Foliage Wind Control
+
+## 🖼️ Preview
+
+![Project6](Media/6.gif)
+
+## 🧱 Features
+
+**Quixel Foliage Integration**
+
+- Imported Megascans plant assets from Fab
+- Added foliage meshes directly into Foliage Mode
+- Painted instanced meshes for efficient scene population
+- Enabled real-time observation of foliage behavior in-engine
+
+**Built-In Wind System**
+
+- Wind animation already embedded within Quixel material instances
+- No external wind actor or system required
+- Movement driven through World Position Offset (WPO)
+
+**Material Instance Wind Controls**
+
+- Disable Wind Animation
+  - Fully toggles all vertex-based movement
+
+- Primary Animation
+  - Controls large-scale foliage sway
+
+- Secondary Animation
+  - Adds subtle leaf and detail motion
+
+- Local Primary Wind Strength
+  - Adjusts intensity of main movement
+
+- Local Secondary Wind Strength
+  - Fine-tunes smaller layered motion (asset dependent)
+
+**Distance-Based Optimization**
+
+- Use Distance Based WPO Fade
+  - Reduces vertex animation at distance for performance
+
+- WPO Fade Disable Distance
+  - Defines cutoff range for wind simulation
+
+**Wind Calculation Modes**
+
+- Use Simplified Wind
+  - Lightweight and consistent animation method
+
+- Full Wind Mode
+  - Allows more complex motion when supported by material
+
+**Quixel Material Function System**
+
+- Located parent material via instance
+- Identified WPO (World Position Offset) section
+- Utilized QMF_WindAnimation for core movement logic
+- QMF_WindGust adds natural variation using:
+  - Time-based animation
+  - World position offsets
+  - Noise textures for organic motion
+
+## 🚀 Result
+
+A fully controlled foliage wind system using Quixel materials, allowing precise adjustment of movement intensity, detail, and performance while understanding the underlying WPO-driven animation system.
